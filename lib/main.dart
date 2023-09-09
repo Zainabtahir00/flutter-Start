@@ -1,28 +1,19 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: SafeArea(
-        child: Scaffold(
+void main() => runApp(
+      MaterialApp(
+        home: Scaffold(
+          backgroundColor: Colors.white,
           appBar: AppBar(
-            title: Text('Pakistan'),
-            backgroundColor: Colors.green,
+            backgroundColor: Colors.pink,
+            title: Text("Hello Kitty!"),
           ),
           body: Center(
-            child: Container(
-              alignment: Alignment.center,
-              color: Colors.green,
-              height: 100.0,
-              width: 150.0, // Set the background color here
-              child: Text('Worldcup!!!!!'),
+            child: Image(
+              image: NetworkImage(
+                  "https://wallpapers-clan.com/wp-content/uploads/2022/08/hello-kitty-pfp-4.jpg"),
             ),
           ),
         ),
       ),
     );
-  }
-}
